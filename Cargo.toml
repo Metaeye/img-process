@@ -1,6 +1,19 @@
 [package]
-name = "compressor"
+name = "img-process"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+name = "lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "encode"
+path = "src/bin/encode.rs"
+
+[[bin]]
+name = "decode"
+path = "src/bin/decode.rs"
+
 [dependencies]
+image = "0.25.2"
